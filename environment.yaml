@@ -1,0 +1,15 @@
+# if you have a m1 chip run the following command :
+# CONDA_SUBDIR=osx-64 conda env create -f environment.yaml
+name: pipeline_env
+
+channels:
+  - defaults
+dependencies:
+  - python=3.8
+  - ipython
+  - matplotlib
+  - numpy
+  - pylint
+  - pip
+  - pip:
+    - -r requirements.txt
